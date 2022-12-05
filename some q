@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class RollNo {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int Marks[]= new int[10];
+        System.out.println("Please enter the total marks of each student: ");
+        for (int i = 0; i < Marks.length; i++) {
+            int m=input.nextInt();
+            Marks[i]=m;
+        }
+        System.out.println("Please enter the student's roll no.(1-10): ");
+        int r=input.nextInt();
+        System.out.println("The marks of student of roll no. " +r+ " are " +Marks[r]);
+        input.close();
+    }
+}
